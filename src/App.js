@@ -13,7 +13,7 @@ function App() {
 		let file = e.target.files[0];
 		if(file.type === 'audio/mpeg') {
 			let obj = player;
-			obj.setFile = file
+			obj.setFile = file;
 			setPlayer(obj);
 		}
 	}
@@ -27,7 +27,7 @@ function App() {
 	}, [])
 
 	useEffect(() => {
-		// console.log('player: ', player);
+		console.log('player: ', player);
 	},[player]);
 
 	return (
