@@ -50,13 +50,11 @@ export default class Player {
     return this.file;
   }
   set setFile(file) {
-	console.log("file: ", file);
     if (file.type === "audio/mpeg") {
       this.audio.pause();
       this.file = file;
       this.typeFile = file.type;
       this.audio.src = this.path + file.name;
-	  console.log("this: ", this);
       this.play();
       if (this.graphics) {
         this.graphics.start();

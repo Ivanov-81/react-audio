@@ -27,7 +27,7 @@ function App() {
 	}, [])
 
 	useEffect(() => {
-		console.log('player: ', player);
+		// console.log('player: ', player);
 	},[player]);
 
 	return (
